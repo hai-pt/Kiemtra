@@ -148,7 +148,9 @@ body {
     padding: 0px 48px;
 }
 .right-text {
-  padding: 45px 119px 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   max-width: 544px;
   text-align: center;
 }
@@ -240,9 +242,6 @@ body {
   .icon-top {
     grid-template-columns: 1fr;
     gap: 20px;
-  }
-  .right-text{
-    padding: 30px 10px 0 10px;
   }
   .icon-right-top{
     display: grid;
