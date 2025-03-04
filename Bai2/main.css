@@ -42,41 +42,39 @@ body {
 
 
 .container-section {
-  padding: 76px 0px 119px 59px;
+  padding: 76px 5px 119px 59px;
 }
 
 .section {
-  display: grid;
-  grid-template-columns: 575px 764px 553px;
-  grid-template-rows: 300px 1fr;
-  gap: 19px;
+  display: flex;
+  justify-content: space-between;
+  overflow: hidden;
+  gap : 16px;
 }
 
-.container-section1 {
-  display: grid;
-  grid-template-rows: 15px 200px 1fr;
-  gap: 15px;
-  padding: 73px 73px 0px 0px;
+.containersection1-top{
+  padding-bottom: 30px;
 }
-
 .container-section2 {
   grid-row: 2/3;
   padding-right: 73px;
 }
-
+.container-section2-mobile{
+  display: none;
+}
 .container-demo {
-  padding-bottom: 29px;
+  padding-bottom: 20px;
 }
 
 .container-extend {
   display: grid;
-  grid-row-gap: 16px;
+  /* grid-row-gap: 16px; */
 }
 
 .extend {
   display: flex;
   justify-content: space-between;
-  padding-top: 20px;
+  padding: 10px;
   border-top: 1px solid rgba(217, 213, 211, 1);
 }
 
@@ -86,9 +84,9 @@ body {
 }
 
 .extend-button {
-  width: 14px;
-  height: 14px;
-  font-size: 10px;
+  width: 20px;
+  height: 20px;
+  font-size: 25px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -135,6 +133,7 @@ body {
 
 @media (max-width: 768px) {
   .section {
+    display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 100px 1fr 1fr 1fr;
     padding-right: 40px;
@@ -164,6 +163,7 @@ body {
 
   .h1 {
     font-family: "Optima-nova-lt-pro", sans-serif;
+    font-weight: 400;
     font-size: 19px;
     line-height: 24px;
     letter-spacing: -4%;
@@ -181,5 +181,11 @@ body {
 
   .container-section1 {
     padding: 0px;
+  }
+  .container-section2{
+    display: none;
+  }
+  .container-section2-mobile{
+  display: block;
   }
 }
