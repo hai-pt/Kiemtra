@@ -41,34 +41,36 @@ body {
 
 
 
-.container-section {
-  padding: 76px 5px 119px 59px;
+.section {
+  padding: 76px 0 119px 59px;
 }
 
-.section {
+.container-section {
   display: flex;
   justify-content: space-between;
   overflow: hidden;
-  gap : 16px;
+  gap: 16px;
 }
 
-.containersection1-top{
+.containersection1-top {
   padding-bottom: 30px;
 }
+
 .container-section2 {
   grid-row: 2/3;
   padding-right: 73px;
 }
-.container-section2-mobile{
+
+.container-section2-mobile {
   display: none;
 }
+
 .container-demo {
   padding-bottom: 20px;
 }
 
 .container-extend {
   display: grid;
-  /* grid-row-gap: 16px; */
 }
 
 .extend {
@@ -82,7 +84,9 @@ body {
   display: flex;
   justify-content: space-between;
 }
-
+.container-buttonfirst{
+  margin-bottom: 15px;
+}
 .extend-button {
   width: 20px;
   height: 20px;
@@ -92,12 +96,11 @@ body {
   align-items: center;
 }
 
-.a {
+.p1 {
   font-family: "Inter", sans-serif;
   font-weight: 500;
   font-size: 16px;
   line-height: 20px;
-  letter-spacing: 0%;
   color: rgba(64, 44, 34, 1);
 }
 
@@ -106,7 +109,7 @@ body {
   font-weight: 400;
   font-size: 63px;
   line-height: 66.78px;
-  letter-spacing: -2%;
+  letter-spacing: -1.26px;
   color: rgba(64, 44, 34, 1);
 }
 
@@ -114,7 +117,7 @@ body {
   font-family: "Optima", sans-serif;
   font-size: 22px;
   line-height: 26.84px;
-  letter-spacing: -2%;
+  letter-spacing: -0.44px;
   color: rgba(64, 44, 34, 1);
 }
 
@@ -127,28 +130,31 @@ body {
   font-weight: 500;
   font-size: 16px;
   line-height: 23px;
-  letter-spacing: 0%;
   color: rgba(64, 44, 34, 1);
 }
 
 @media (max-width: 768px) {
-  .section {
+  .section{
+    padding: 0;
+  }
+  .container-section {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 100px 1fr 1fr 1fr;
-    padding-right: 40px;
+    padding-top: 47px;
+    padding-left: 19px;
+    padding-right: 18px;
   }
 
   .container-section2 {
     grid-row: 4/5;
   }
 
-  .a {
+  .p1 {
     font-family: "Inter", sans-serif;
     font-weight: 500;
     font-size: 14px;
     line-height: 20px;
-    letter-spacing: 0%;
     color: rgba(64, 44, 34, 1);
   }
 
@@ -157,7 +163,7 @@ body {
     font-weight: 400;
     font-size: 33px;
     line-height: 38px;
-    letter-spacing: -4%;
+    letter-spacing: -1.32px;
     color: rgba(64, 44, 34, 1);
   }
 
@@ -166,7 +172,7 @@ body {
     font-weight: 400;
     font-size: 19px;
     line-height: 24px;
-    letter-spacing: -4%;
+    letter-spacing: -0.76px;
     color: rgba(64, 44, 34, 1);
   }
 
@@ -175,17 +181,18 @@ body {
     font-weight: 500;
     font-size: 15px;
     line-height: 22px;
-    letter-spacing: 0%;
     color: rgba(64, 44, 34, 1);
   }
 
   .container-section1 {
     padding: 0px;
   }
-  .container-section2{
+
+  .container-section2 {
     display: none;
   }
-  .container-section2-mobile{
-  display: block;
+
+  .container-section2-mobile {
+    display: block;
   }
 }
