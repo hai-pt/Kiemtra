@@ -52,11 +52,65 @@ body {
 }
 
 .container-section {
-  max-width: 1920px;
-  max-height: 1214px;
-  position: relative;
-  padding: 10px;
   background-color: rgba(255, 249, 245, 1);
+}
+
+.section {
+  max-width: 1920px;
+  position: relative;
+}
+
+.section3{
+  position: absolute;
+  left: 5.89%;
+  top: 17.30%;
+}
+.section4{
+  position: absolute;
+  right: 5%;
+  top: 13.84%;
+}
+.section5{
+  position: absolute;
+  left: 8.80%;
+  top: 83.11%;
+}
+.section6{
+  position: absolute;
+  right: 12.60%;
+  top: 74.65%;
+}
+.img1 {
+}
+
+.img2 {
+}
+
+.img3 {
+}
+
+.img4 {
+}
+.container-section1 {
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 32px 96px 88px;
+
+}
+.section1{
+  display: flex;
+  gap: 33.5px;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin: 0 auto;
+}
+.line {
+  flex: 1;
+  background-color: rgba(243, 234, 229, 1);
+  height: 1px;
+  align-items: center;
 }
 
 .container-service {
@@ -85,44 +139,7 @@ body {
   border: none;
 }
 
-.img1 {
-  position: absolute;
-  left: 113px;
-  top: 210px;
-  width: 183px;
-  height: 257px;
-}
 
-.img2 {
-  position: absolute;
-  right: 96px;
-  top: 168px;
-  width: 274px;
-  height: 385px;
-}
-
-.img3 {
-  position: absolute;
-  left: 169px;
-  bottom: 205px;
-  width: 253px;
-  height: 363px;
-}
-
-.img4 {
-  position: absolute;
-  right: 242px;
-  bottom: 247px;
-  width: 183px;
-  height: 257px;
-}
-
-.section {
-  display: grid;
-  grid-template-rows: 20px 1fr;
-  place-items: center;
-  grid-gap: 88px;
-}
 
 .section2 {
   display: grid;
@@ -130,6 +147,7 @@ body {
   grid-gap: 113px;
   max-width: 636px;
   max-height: 998px;
+  margin: 0 auto;
 }
 
 .item {
@@ -141,7 +159,6 @@ body {
 .service {
   display: flex;
   justify-content: space-between;
-  /* width: 100%; */
 }
 
 .service-2 {
@@ -157,12 +174,11 @@ body {
 }
 
 .p {
-  font-family: "Inter", sans-serif;
+  font-family: "Instrument Serif", sans-serif;
   font-weight: 400;
-  /* font-style: italic; */
-  font-size: 16px;
+  font-style: italic;
+  font-size: 20px;
   line-height: 24px;
-  letter-spacing: 0px;
   color: rgba(70, 43, 32, 1);
 
 }
